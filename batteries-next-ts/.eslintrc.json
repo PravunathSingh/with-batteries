@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "no-unused-vars": 1,
+    "react/prop-types": "off",
+    "@typescript-eslint/no-unused-vars": "warning",
+    "@typescript-eslint/no-explicit-any": "error"
+  },
+  "globals": {
+    "React": "writable"
+  }
+}
