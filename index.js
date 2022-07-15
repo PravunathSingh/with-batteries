@@ -79,7 +79,7 @@ const init = async () => {
         {
           type: targetDirectory ? null : 'text',
           name: 'projectName',
-          message: reset('What is the name of your project?'),
+          message: 'What is the name of your project?',
           initial: defaultTargetDirectory,
           onState: (answer) => {
             targetDirectory =
@@ -110,7 +110,7 @@ const init = async () => {
         {
           type: () => (isValidPackageName(getProjectName()) ? null : 'text'),
           name: 'packageName',
-          message: reset('Package name:'),
+          message: 'Package name:',
           initial: () => toValidPackageName(getProjectName()),
           validate: (directory) =>
             isValidPackageName(directory) || 'Invalid package.json name',
@@ -120,10 +120,8 @@ const init = async () => {
           name: 'framework',
           message:
             typeof template === 'string' && !templates.includes(template)
-              ? reset(
-                  `"${template}" isn't a valid template. Please choose from below: `
-                )
-              : reset('Select a framework:'),
+              ? `"${template}" isn't a valid template. Please choose from below: `
+              : 'Select a framework:',
           initial: 0,
           choices: frameworks.map((framework) => {
             const frameworkColor = framework.color;
@@ -137,7 +135,7 @@ const init = async () => {
           type: (framework) =>
             framework && framework.variants ? 'select' : null,
           name: 'variant',
-          message: reset('Select a variant:'),
+          message: 'Select a variant:',
           choices: (framework) =>
             framework.variants.map((variant) => {
               const variantColor = variant.color;

@@ -1,6 +1,6 @@
 {
   "name": "with-batteries",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A boilerplate generator for React and Next, configured with all the neccessary packages (batteries) to save you time.",
   "author": "Pravunath Singh",
   "license": "MIT",
