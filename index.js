@@ -151,7 +151,7 @@ const init = async () => {
       ],
       {
         onCancel: () => {
-          throw new Error(red('✖') + ' Operation cancelled');
+          throw new Error(colors.red('✖') + ' Operation cancelled');
         },
       }
     );
