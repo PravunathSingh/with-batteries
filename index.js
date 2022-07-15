@@ -26,7 +26,7 @@ const frameworks = [
     color: colors.cyan,
     variants: [
       {
-        name: 'react',
+        name: 'react-js',
         display: 'JavaScript',
         color: colors.yellow,
       },
@@ -42,7 +42,7 @@ const frameworks = [
     color: colors.magenta,
     variants: [
       {
-        name: 'next',
+        name: 'next-js',
         display: 'JavaScript',
         color: colors.yellow,
       },
