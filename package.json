@@ -6,7 +6,7 @@
   "license": "MIT",
   "type": "module",
   "bin": {
-    "create-with-batteries": "index.js"
+    "with-batteries": "index.js"
   },
   "files": [
     "index.js",
