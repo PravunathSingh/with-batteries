@@ -65,7 +65,7 @@ const init = async () => {
   let targetDirectory = formatTargetDirectory(args._[0]);
   let template = argv.batteries || argv.b;
 
-  const defaultTargetDirectory = 'batteries-included-project';
+  const defaultTargetDirectory = 'with-batteries-project';
   const getProjectName = () =>
     targetDir === '.' ? path.basename(path.resolve()) : targetDir;
 
