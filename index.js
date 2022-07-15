@@ -63,6 +63,10 @@ const templates = frameworks
   )
   .reduce((acc, val) => acc.concat(val), []);
 
+const renameFiles = {
+  _gitignore: '.gitignore',
+};
+
 const init = async () => {
   let targetDirectory = formatTargetDirectory(args._[0]);
   let template = argv.batteries || argv.b;
