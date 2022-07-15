@@ -16,7 +16,6 @@ const colors = {
   red: chalk.redBright,
 };
 
-// console.log(colors.blue('Welcome to the React Native template generator!'));
 const args = minimist(process.argv.slice(2), { string: ['_'] });
 const currentWorkingDirectory = process.cwd();
 
@@ -218,8 +217,8 @@ const init = async () => {
       console.log(`  yarn dev`);
       break;
     default:
-      console.log(`  ${packageManager} install`);
-      console.log(`  ${packageManager} run dev`);
+      console.log(`  ${packageManager} install or yarn`);
+      console.log(`  ${packageManager} run dev or yarn run dev`);
       break;
   }
   console.log();
