@@ -69,7 +69,7 @@ const init = async () => {
 
   const defaultTargetDirectory = 'with-batteries-project';
   const getProjectName = () =>
-    targetDir === '.' ? path.basename(path.resolve()) : targetDir;
+    targetDirectory === '.' ? path.basename(path.resolve()) : targetDirectory;
 
   let result = {};
 
