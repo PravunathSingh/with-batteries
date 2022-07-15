@@ -1,7 +1,7 @@
 {
   "name": "batteries-included",
   "version": "1.0.0",
-  "description": "A boilerplate generator for React and Next, configured with all the neccessary packages to save you time.",
+  "description": "A boilerplate generator for React and Next, configured with all the neccessary packages (batteries) to save you time.",
   "author": "Pravunath Singh",
   "license": "MIT",
   "type": "module",
@@ -13,6 +13,9 @@
     "batteries-*"
   ],
   "main": "index.js",
+  "engines": {
+    "node": ">=14.18.0"
+  },
   "keywords": [
     "react",
     "next",
@@ -20,5 +23,18 @@
     "package",
     "vite",
     "developer experience"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PravunathSingh/batteries-included.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PravunathSingh/batteries-included/issues"
+  },
+  "homepage": "https://github.com/PravunathSingh/batteries-included#readme",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "minimist": "^1.2.6",
+    "prompts": "^2.4.2"
+  }
 }
